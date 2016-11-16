@@ -7,7 +7,7 @@ Trusted Domain Project OpenDMARC milter with MySQL DB accessible from host where
 - Install via composer
 ```
     "require": {
-        "php": ">=5.5",
+        "php": ">=5.4",
         "falon/opendmarc-report-analyzer"
     }
 ```
