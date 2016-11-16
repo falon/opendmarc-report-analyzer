@@ -1,0 +1,13 @@
+; Database Info
+[db]
+HOST = 'localhost'
+PORT = 3306
+USER = 'opendmarc-user'
+PASS = 'password'
+NAME = 'opendmarc'
+INTERVAL = '1 WEEK'
+
+;Syslog
+[syslog]
+tag = 'myDMARC'
+fac = LOG_MAIL
