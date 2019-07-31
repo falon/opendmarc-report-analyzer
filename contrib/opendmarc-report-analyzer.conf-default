@@ -1,0 +1,11 @@
+<Directory /var/www/html/opendmarc-report-analyzer>
+    Options FollowSymLinks
+    AllowOverride None
+    AuthBasicProvider authservice
+    AuthName "Welcome to OpenDMARC Report Analyzer!"
+    AuthType basic
+    <RequireAny>
+            Require all granted
+    </RequireAny>
+</Directory>
+Alias /ldapimap "/var/www/html/opendmarc-report-analyzer"
