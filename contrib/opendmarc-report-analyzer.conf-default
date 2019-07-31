@@ -8,4 +8,4 @@
             Require all granted
     </RequireAny>
 </Directory>
-Alias /ldapimap "/var/www/html/opendmarc-report-analyzer"
+Alias /opendmarc "/var/www/html/opendmarc-report-analyzer"
