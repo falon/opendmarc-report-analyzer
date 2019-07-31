@@ -6,5 +6,5 @@ Trusted Domain Project OpenDMARC milter with MySQL DB accessible from host where
 ## Install
 - PHP 5.4 and 7 tested
 - Move style.css and ajaxsbmt.js in DOCUMENT_ROOT/include dir if you haven't already from my others projects.
-- Move dmarc.conf-default in dmarc.conf.
-- Edit dmarc.conf with DB info from OpenDMARC
+- Move opendmarc-report-analyzer.conf-default in opendmarc-report-analyzer.conf.
+- Edit "opendmarc-report-analyzer.conf" with DB info from OpenDMARC

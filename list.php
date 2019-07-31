@@ -1,7 +1,7 @@
 <h2>Statistics for <?=$_POST['domain'] ?: 'all domains'?></h2>
 <?php
 
-$conf = parse_ini_file("dmarc.conf", true);
+$conf = parse_ini_file("opendmarc-report-analyzer.conf", true);
 require_once('function.php');
 
 /* Register POST valiable */

@@ -1,7 +1,7 @@
 <?php
 
 
-$conf = parse_ini_file("dmarc.conf", true);
+$conf = parse_ini_file("opendmarc-report-analyzer.conf", true);
 $queue_id = $_POST['queue_id'] ?: '';
 if ( $queue_id == '') exit ("<p>Null queue ID</p>");
 

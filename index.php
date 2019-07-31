@@ -12,7 +12,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <?php
 /* Stats by policy */
-$conf = parse_ini_file("dmarc.conf", true);
+$conf = parse_ini_file("opendmarc-report-analyzer.conf", true);
 require_once('function.php');
 $user = username();
 $sql_F = 'SELECT policy, count(domains.name) as countdom FROM messages JOIN domains ON domains.id = messages.from_domain WHERE `date` >= DATE_SUB(NOW(), INTERVAL '.$conf['db']['INTERVAL'].') GROUP BY policy ORDER BY countdom DESC';

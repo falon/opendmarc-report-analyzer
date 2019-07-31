@@ -5,7 +5,7 @@
 $domain = base64_decode(array_values(array_keys($_POST))[0], TRUE);
 $id = array_values($_POST)[0];
 
-$conf = parse_ini_file("dmarc.conf", true);
+$conf = parse_ini_file("opendmarc-report-analyzer.conf", true);
 
 
 /* Query */
