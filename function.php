@@ -148,12 +148,14 @@ function human($myconn,$key,$value) {
 				case 17: return 'Quarantine';
 				case 18: return 'None';
 			}
+			break;
 		case 'align_dkim':
 		case 'align_spf' :
 			switch ($value) {
                                 case 4: return 'Yes';
 				case 5: return 'No';
 			}
+			break;
 		case 'spf' :
 		case 'dkim':
 			switch ($value) {
@@ -161,18 +163,21 @@ function human($myconn,$key,$value) {
                                 case 0: return 'Pass';
 				case 2: return 'SoftFail';
 				case 3: return 'Neutral';
+				case 4: return 'TmpError';
 				case 7: return 'Fail';
 				case 12: return 'Discard';
 				case 6: return 'None';
 				case -1: return 'N/A';
 			}
+			break;
 		case 'sigdomain' :
                 case 'Env Domain':
 		case 'RFC5322 From Dom':
 			return id_to_domain($myconn,'domains',$value);
+			break;
                 case 'reporter':
 			return id_to_domain($myconn,'reporters',$value);
-
+			break;
 
 		default: return $value;
 	}
