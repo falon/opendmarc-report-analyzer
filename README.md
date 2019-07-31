@@ -21,5 +21,6 @@ gpgcheck=0
 ```
 
 - yum install opendmarc-report-analyzer
+- systemctl reload httpd.service
 
 There are no requisite about OpenDMARC and MySQL. You can install these tools on other hosts.
