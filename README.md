@@ -11,7 +11,7 @@ Trusted Domain Project OpenDMARC milter with MySQL DB accessible from host where
 - Edit "opendmarc-report-analyzer.conf" with DB info from OpenDMARC
 
 ### By RPM
-- Create a file /etc/yum.repos.d/falon.repo with
+- Create a file `/etc/yum.repos.d/falon.repo` with
 ```
 [falon]
 name=Falon Repo
@@ -22,4 +22,4 @@ gpgcheck=0
 
 - yum install opendmarc-report-analyzer
 
-There are no requisite abount OpenDMARC and MySQL. You can install these tools on other hosts.
+There are no requisite about OpenDMARC and MySQL. You can install these tools on other hosts.
